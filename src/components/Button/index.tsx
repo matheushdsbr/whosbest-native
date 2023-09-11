@@ -1,6 +1,6 @@
 import React from 'react';
-import {TouchableOpacityProps} from 'react-native';
-import {Container, Touchable, Text} from './styles';
+import { TouchableOpacityProps } from 'react-native';
+import { Container, Touchable, Text } from './styles';
 
 interface ButtonProps extends TouchableOpacityProps {
   isDisabled?: boolean;

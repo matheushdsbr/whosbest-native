@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {TouchableOpacityProps, TextProps} from 'react-native';
+import { TouchableOpacityProps, TextProps } from 'react-native';
 
 interface TouchableType extends TouchableOpacityProps {
   color: string;
@@ -20,8 +20,8 @@ export const Container = styled.View`
 
 export const Touchable = styled.TouchableOpacity<TouchableType>`
   height: 50px;
-  background: ${props => props.color || '#fff'};
-  opacity: ${props => (props.isDisabled ? '0.2' : '1')};
+  background: ${(props) => props.color || '#fff'};
+  opacity: ${(props) => (props.isDisabled ? '0.2' : '1')};
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -29,7 +29,7 @@ export const Touchable = styled.TouchableOpacity<TouchableType>`
 `;
 
 export const Text = styled.Text<TextType>`
-  color: ${props => (props.isDisabled ? '#CCC' : '#FFF')};
+  color: ${(props) => (props.isDisabled ? '#CCC' : '#FFF')};
   font-size: 24px;
   font-family: bold;
 `;
